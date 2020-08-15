@@ -1,0 +1,4 @@
+1) Initialization: forgot to put is_initialized=true; at the beginning, there is no particles, so I cannot initialize by just saying particles[i].x=x
+2) variable type: distance and observed weight are both just double, not vectors
+3) resample: if use discrete distribution, weights need to be updated in the update weights function; need to clear the weight vector for the next round; need to create resampled particles
+4) data association: need to loop in observations first
